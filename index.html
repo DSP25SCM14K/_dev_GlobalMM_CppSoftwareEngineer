@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080d0f" />
+  <meta name="description" content="Dev Kumar builds low-latency C++ trading systems, hardware interfaces, and dependable market infrastructure." />
+  <title>Dev Kumar — Systems, at market speed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Dev Kumar, home">DK<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#systems">Systems</a><a href="#projects">Projects</a><a href="#about">About</a>
+    </nav>
+    <a class="header-contact" href="mailto:devkumar.dklv@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/market-signal.svg" alt="" />
+        <div class="hero-glow"></div>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> CHICAGO · SYSTEMS ENGINEERING</div>
+        <h1>Systems,<br /><em data-rotating-copy>at market speed.</em></h1>
+        <p class="hero-deck">I build the C++ systems behind real-time decisions—where every packet, clock cycle, and microsecond has a job to do.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="mailto:devkumar.dklv@gmail.com">devkumar.dklv@gmail.com <span>↗</span></a></div>
+      </div>
+      <div class="hero-meta"><span>LOW LATENCY / HIGH CONVICTION</span><span>01 — 04</span></div>
+      <div class="hero-stat"><span class="stat-value">38<span>%</span></span><span class="stat-label">lower median<br />tick-to-trade</span></div>
+      <a class="scroll-cue" href="#signal" aria-label="Scroll to the next section"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section id="signal" class="signal-band section-wrap">
+      <div class="section-kicker"><span>01 / THE SIGNAL</span><span class="rule"></span><span>IDEA → PRODUCTION</span></div>
+      <div class="signal-layout">
+        <div class="signal-intro"><h2>Performance is<br />a system property.</h2><p>Latency rarely lives in one line of code. I work across the stack—from the wire and the kernel to cache behavior and FPGA boundaries—to make the whole path faster and more predictable.</p></div>
+        <div class="flow-card" aria-label="Market data path diagram">
+          <div class="flow-head"><span>MARKET DATA PATH</span><span class="flow-live"><i></i> LIVE PATH</span></div>
+          <div class="flow-track">
+            <div class="flow-node"><b class="node-icon">⌁</b><span>Exchange<br />multicast</span></div><div class="flow-line"><i></i></div>
+            <div class="flow-node"><b class="node-icon">▦</b><span>SmartNIC<br />/ FPGA</span></div><div class="flow-line"><i></i></div>
+            <div class="flow-node"><b class="node-icon">{ }</b><span>C++<br />feed handler</span></div><div class="flow-line"><i></i></div>
+            <div class="flow-node"><b class="node-icon">◉</b><span>Order book<br />/ execution</span></div>
+          </div>
+          <div class="flow-foot"><span>HARDWARE TIMESTAMPS · LOCK-FREE QUEUES · ZERO-COPY</span><span>2.6 <small>µs</small></span></div>
+          <div class="waveform" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          <div class="latency-scale"><span>WIRE</span><span>NIC</span><span>DECODE</span><span>BOOK</span><span>ORDER</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="experience section-wrap">
+      <div class="section-kicker"><span>02 / EXPERIENCE</span><span class="rule"></span><span>BUILD · MEASURE · SHIP</span></div>
+      <div class="section-heading"><h2>Work that moves<br /><em>the needle.</em></h2><p>Eight years across trading, hardware, and distributed systems. The details matter; so does what they change in production.</p></div>
+      <div class="experience-list">
+        <article class="experience-item"><div class="experience-date">MAR 2025 — NOW<span class="current-dot"></span></div><div class="experience-main"><div class="experience-title"><h3>Software Engineer</h3><span>C++ / LOW-LATENCY TRADING &amp; HARDWARE SYSTEMS</span></div><p class="company">London Stock Exchange Group <span>·</span> Chicago, IL</p><ul>
+          <li>Reduced median tick-to-trade latency by 38% (4.2µs to 2.6µs) by designing and building a low-latency, high-performance C++20 trading system for options order flow using lock-free SPSC queues, CPU pinning on isolated cores, and kernel-bypass networking.</li>
+          <li>Doubled packet throughput on ASIC-based SmartNICs and FPGA cards by writing highly performant C++ control software (MMIO registers, PCIe DMA rings, poll-mode completions) to interface with hardware components.</li>
+          <li>Cut CPU cycles per packet by 40% and p99.9 latency jitter by 45% by optimizing production code with perf and VTune profiling, cache-line alignment, branch reduction, SIMD, hugepages, and NUMA-aware memory placement in DPDK fast paths.</li>
+          <li>Held cross-server clock offset under 100ns and cut event-ordering discrepancies by 90% by building IEEE 1588 PTP infrastructure with grandmaster and boundary clocks, NIC hardware timestamping, and C++ monitors for offset, drift, and packet delay variation.</li>
+          <li>Achieved seamless integration of 14 releases with zero production incidents by building C++ latency benchmarks on PTP-synced hardware timestamps, regression and stress tests, and P50/P99/P99.9 alerting on throughput, drops, and clock offset.</li>
+        </ul></div></article>
+        <article class="experience-item"><div class="experience-date">AUG 2023 — MAR 2025</div><div class="experience-main"><div class="experience-title"><h3>Software Engineer</h3><span>C++ / HFT &amp; FPGA SYSTEMS</span></div><p class="company">Citadel <span>·</span> Chicago, IL</p><ul>
+          <li>Reduced market data CPU utilization by 35% by leading a hardware/software co-design that offloaded packet parsing and normalization to FPGA logic over PCIe and DMA, keeping risk and execution logic in modern C++17.</li>
+          <li>Shortened FPGA bring-up time by 50% by building C++ host software to control and interface with FPGAs, covering register maps, bitstream loading, DMA buffer management, health monitoring, and automated error recovery.</li>
+          <li>Cut order-entry latency 30% by rebuilding a C++17 FIX/OUCH gateway with zero-copy serialization, memory pools, and busy polling.</li>
+          <li>Increased order book update capacity 2.5x by building lock-free, multithreaded CME MDP 3.0 and ITCH feed handlers with cache-line aligned data structures, sequence validation, gap detection, and TCP replay recovery.</li>
+          <li>Processed market data at line rate with zero packet loss by working closely with hardware engineers on Verilog/SystemVerilog RTL in AMD/Xilinx Vivado and Intel Quartus, covering synthesis, timing closure, bitstream generation, and C++/FPGA co-simulation.</li>
+        </ul></div></article>
+        <article class="experience-item"><div class="experience-date">APR 2018 — AUG 2023</div><div class="experience-main"><div class="experience-title"><h3>Software Engineer</h3><span>C++ / SYSTEMS, NETWORKING &amp; HARDWARE</span></div><p class="company">Tata Group</p><ul>
+          <li>Processed 500K+ messages/sec with deterministic sub-100µs response times by building low-latency C++ market data and order routing systems for the commodity futures and options hedging desk, parsing CME MDP 3.0 multicast feeds.</li>
+          <li>Reduced I/O latency by 35% by writing Linux kernel device drivers and C++ userspace libraries to control and interface with FPGA- and ASIC-based embedded controllers over PCIe, SPI, and memory-mapped I/O.</li>
+          <li>Raised real-time throughput 60% by redesigning multithreaded schedulers, thread pools, and cache-aware C++14/17 data structures.</li>
+          <li>Sustained 99.99% uptime for distributed systems by tuning TCP/IP and UDP multicast and adding RDMA zero-copy transfer.</li>
+          <li>Cut defect rates 40% by mentoring 10-15 engineers and partnering with hardware teams on interface specs, code reviews, and CI/CD.</li>
+        </ul></div></article>
+      </div>
+    </section>
+
+    <section id="systems" class="systems section-wrap">
+      <div class="section-kicker"><span>03 / SYSTEMS TOOLKIT</span><span class="rule"></span><span>FROM SILICON TO SOFTWARE</span></div>
+      <div class="systems-heading"><h2>Close to the<br /><em>metal. Clear on the outcome.</em></h2><p>Deep in the details, connected to the full system.</p></div>
+      <div class="systems-map">
+        <div class="system-column"><span class="system-index">01</span><div class="system-symbol">⌘</div><h3>Modern C++</h3><p>Build expressive, predictable systems with a firm grasp of what the compiler and machine will do next.</p><div class="tag-list"><span>C++14/17/20</span><span>RAII</span><span>Templates</span><span>Atomics</span><span>SIMD</span></div></div>
+        <div class="map-connector" aria-hidden="true"><i></i></div>
+        <div class="system-column"><span class="system-index">02</span><div class="system-symbol">⌁</div><h3>Network &amp; OS</h3><p>Move data with tight control over the wire, the kernel, and the resources that shape each hop.</p><div class="tag-list"><span>DPDK</span><span>UDP multicast</span><span>PTP</span><span>RDMA</span><span>Linux</span></div></div>
+        <div class="map-connector" aria-hidden="true"><i></i></div>
+        <div class="system-column"><span class="system-index">03</span><div class="system-symbol">▤</div><h3>Hardware interface</h3><p>Make hardware and software act as one through fast, observable, recoverable interfaces.</p><div class="tag-list"><span>FPGA / ASIC</span><span>PCIe / DMA</span><span>MMIO</span><span>Drivers</span><span>HIL</span></div></div>
+      </div>
+      <div class="systems-outcome"><span>THE RESULT</span><p>Faster paths. Tighter timing. Systems that behave when the market is moving.</p><span class="outcome-pulse"><i></i><i></i><i></i></span></div>
+    </section>
+
+    <section id="projects" class="projects section-wrap">
+      <div class="section-kicker"><span>04 / SELECTED PROJECTS</span><span class="rule"></span><span>OPEN SOURCE · HANDS ON</span></div>
+      <div class="section-heading"><h2>Ideas made<br /><em>executable.</em></h2><p>Systems, tools, and experiments built to learn by making.</p></div>
+      <div class="featured-projects">
+        <article class="featured-card featured-cme"><div class="project-art cme-art" aria-hidden="true"><span class="grid-glow"></span><span class="ticker ticker-a">CME · MDP 3.0</span><svg viewBox="0 0 520 150"><path d="M0 116H520M0 76H520M0 36H520"/><polyline points="0,108 56,108 74,82 112,82 131,102 164,102 181,48 220,48 241,71 290,71 310,36 347,36 370,63 408,63 427,20 451,20 470,39 520,39"/></svg><span class="ticker ticker-b">SEQ 09281  •  GAP RECOVERY  •  PTP</span></div><div class="project-info"><div class="project-number">01 / MARKET DATA</div><h3>CME MDP 3.0<br />Multicast Feed Handler</h3><p>Decode SBE multicast, rebuild order books, recover sequence gaps. A C++20 path designed for sub-microsecond tick-to-book latency.</p><div class="project-tags"><span>C++20</span><span>SBE</span><span>UDP MULTICAST</span><span>LOCK-FREE</span></div><div class="project-links"><a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">SourceCode <b>↗</b></a></div></div></article>
+        <article class="featured-card featured-driver"><div class="project-art driver-art" aria-hidden="true"><div class="chip"><span>HOST</span><b>PCIe</b><span>DMA</span></div><div class="chip-lines"><i></i><i></i><i></i><i></i><i></i></div><div class="chip chip-small"><span>DEVICE</span><b>MMIO</b><span>IRQ</span></div><span class="driver-label">KERNEL ↔ USER SPACE</span></div><div class="project-info"><div class="project-number">02 / HARDWARE ACCESS</div><h3>PCIe Character Device<br />Driver &amp; C++ Interface</h3><p>Linux character driver with mmap, ioctl, and interrupts, wrapped in a type-safe C++ API for zero-copy userspace access.</p><div class="project-tags"><span>C</span><span>C++17</span><span>LINUX KERNEL</span><span>DMA</span></div><div class="project-links"><a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">SourceCode <b>↗</b></a></div></div></article>
+      </div>
+      <div class="project-grid" id="project-grid" aria-label="More projects"></div>
+      <div class="publication-card"><div class="publication-mark">IEEE<br /><span>2023</span></div><div class="publication-body"><span class="project-number">RESEARCH / PUBLICATION</span><h3>A Comparative Study of Movie Recommendation Systems</h3><p>Published research exploring recommendation approaches and their comparative performance.</p></div><div class="publication-links"><a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper <b>↗</b></a><a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">SourceCode <b>↗</b></a><a href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate <b>↗</b></a></div></div>
+    </section>
+
+    <section id="about" class="about section-wrap">
+      <div class="section-kicker"><span>05 / HOW I WORK</span><span class="rule"></span><span>CURIOUS BY DEFAULT</span></div>
+      <div class="about-layout"><div class="about-statement"><span class="quote-mark">“</span><h2>Make it fast.<br />Know <em>why</em> it’s fast.</h2><p>Good systems engineering starts with curiosity: follow the packet, trace the clock, ask what the hardware sees. Then measure, simplify, and make the result dependable for the people who rely on it.</p></div><div class="about-side"><div class="principle"><span>01</span><div><h3>Measure in context</h3><p>Use real timestamps and production-shaped loads to understand the whole path.</p></div></div><div class="principle"><span>02</span><div><h3>Think across boundaries</h3><p>Work alongside hardware, research, and trading teams to get interfaces right.</p></div></div><div class="principle"><span>03</span><div><h3>Own what ships</h3><p>Build observability, recovery, and regression into the work from day one.</p></div></div><div class="about-links"><a href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://scholar.google.com/citations?user=VXIu5a4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a><a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a></div></div></div>
+    </section>
+    <section class="contact section-wrap"><div class="contact-grid" aria-hidden="true"></div><div class="contact-copy"><span class="section-kicker-label">BUILDING FOR THE NEXT HARD PROBLEM</span><h2>Let’s make<br /><em>the path better.</em></h2><a class="button button-primary" href="mailto:devkumar.dklv@gmail.com">Get in touch <span>↗</span></a></div><div class="contact-rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div></section>
+  </main>
+</body>
+</html>
